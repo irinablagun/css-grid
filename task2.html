@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Grid - Task 2</title>
+
+    <link rel="stylesheet" href="./style.css" />
+
+    <style>
+      .container {
+        display: grid;
+        height: 100vh;
+        grid-template-columns: repeat(12, 1fr);
+        column-gap: 16px;
+        align-items: center;
+      }
+
+      .item {
+        height: 50vh;
+        padding: 16px;
+        border: 2px solid tomato;
+        border-radius: 4px;
+      }
+
+      .item-1 {
+        grid-column: 2 / span 4;
+      }
+
+      .item-2 {
+        grid-column: 6 / span 6;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item item-1">1</div>
+      <div class="item item-2">2</div>
+    </div>
+  </body>
+</html>
