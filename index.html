@@ -6,49 +6,108 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CSS Grid</title>
     <link rel="stylesheet" href="./style.css" />
+
+    <style>
+      :root {
+        --color-xiketic: #0c0d22;
+        --color-sonic-silver: #6e6d7a;
+        --color-light-gray: #ccc;
+        --color-green-sheen: #64b6ac;
+      }
+
+      a:hover {
+        transition: color 0.15s;
+      }
+
+      .container {
+        padding: 100px;
+        color: var(--color-xiketic);
+      }
+
+      .link {
+        display: inline-block;
+        margin-top: 20px;
+        font-size: 14px;
+        color: var(--color-sonic-silver);
+      }
+
+      .link:hover {
+        color: var(--color-xiketic);
+      }
+
+      .tasks {
+        margin-top: 100px;
+      }
+
+      .tasks div + div {
+        margin-top: 40px;
+      }
+
+      .tasks b {
+        display: inline-block;
+        width: 100px;
+        color: var(--color-light-gray);
+      }
+
+      .tasks a {
+        color: inherit;
+      }
+
+      .tasks a:hover {
+        color: var(--color-green-sheen);
+      }
+    </style>
   </head>
   <body>
-    <div>
-      <a href="layout.html">Layout example</a>
-    </div>
-    <br />
-    <div>
-      <a href="test.html">Test example</a>
-    </div>
-
-    <h1>Tasks</h1>
-    <a
-      href="https://www.figma.com/proto/gPibJxL1JLvL3qKOwQfxok/CSS-Grid?node-id=1%3A2&viewport=551%2C-133%2C1.2567064762115479&scaling=min-zoom"
-    >
-      https://www.figma.com/proto/gPibJxL1JLvL3qKOwQfxok/CSS-Grid?node-id=1%3A2&viewport=551%2C-133%2C1.2567064762115479&scaling=min-zoom
-    </a>
-
-    <div>
-      <a href="task1.html">Task 1 - Pancake Stack</a>
-    </div>
-    <br />
-    <div>
-      <a href="task2.html">Task 2 - Simple 12 Columns Grid Layout</a>
-    </div>
-    <br />
-    <div>
-      <a href="task3.html">
-        Task 3/1 - Responsive Layout without and grid-template-areas
+    <div class="container">
+      <h1>Grid Tasks</h1>
+      <a
+        href="https://www.figma.com/proto/gPibJxL1JLvL3qKOwQfxok/CSS-Grid?node-id=1%3A2&viewport=551%2C-133%2C1.2567064762115479&scaling=min-zoom"
+        class="link"
+      >
+        https://www.figma.com/proto/gPibJxL1JLvL3qKOwQfxok/CSS-Grid?node-id=1%3A2&viewport=551%2C-133%2C1.2567064762115479&scaling=min-zoom
       </a>
-    </div>
-    <br />
-    <div>
-      <a href="task3.html">
-        Task 3/2 - Responsive Layout with grid-template-areas
-      </a>
-    </div>
-    <br />
-    <div>
-      <a href="task4.html">Task 4 - Responsive Layout Without Media Query</a>
-    </div>
-    <br />
-    <div>
-      <a href="task5.html">Task 5 - 12 x 12 Chess Grid</a>
+
+      <div class="tasks">
+        <div>
+          <b>Task 1</b>
+          <a href="tasks/task-1.html">Pancake Stack</a>
+        </div>
+
+        <div>
+          <b>Task 2</b>
+          <a href="tasks/task-2.html">Simple 12 Columns Grid Layout</a>
+        </div>
+
+        <div>
+          <b>Task 3-1</b>
+          <a href="tasks/task-3-1.html">
+            Responsive Layout without and grid-template-areas
+          </a>
+        </div>
+
+        <div>
+          <b>Task 3-2</b>
+          <a href="tasks/task-3-2.html">
+            Responsive Layout with grid-template-areas
+          </a>
+        </div>
+
+        <div>
+          <b>Task 4</b>
+          <a href="tasks/task-4.html">Responsive Layout Without Media Query</a>
+        </div>
+
+        <div>
+          <b>Task 5</b>
+          <a href="tasks/task-5.html">12 x 12 Chess Grid</a>
+        </div>
+
+        <div>
+          <b>Layout</b>
+          <a href="layout.html">Layout Example</a>
+        </div>
+      </div>
     </div>
   </body>
 </html>
